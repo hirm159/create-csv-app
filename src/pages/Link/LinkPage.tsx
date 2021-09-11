@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Container, Card, Col } from 'react-bootstrap';
+import { Button, Container, Card, Col, Row } from 'react-bootstrap';
 
 const titleStyle: React.CSSProperties = {
     marginBottom: "30px"
@@ -13,6 +13,7 @@ export default class LinkPage extends React.Component {
                     <Col md={12}>
                         <h1 style={titleStyle}>リンク集</h1>
                     </Col>
+                    <Row>
                         <Col xs={6}>
                             <Card>
                                 <Card.Body>
@@ -25,6 +26,7 @@ export default class LinkPage extends React.Component {
                                 </Card.Body>
                             </Card>
                         </Col>
+                    </Row>
                 </div>
             </Container>
         );
