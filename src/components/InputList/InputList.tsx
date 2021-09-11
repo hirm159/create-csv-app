@@ -1,9 +1,17 @@
-import React  from 'react';
+import React, { useState } from 'react';
 
-/*export default class InputList extends React.Component {
-    render() {
-        return (
+interface ListItemProps {
+    items: {id: number, title: string}[]
+}
 
-        );
-    }
-}*/
+const InputList: React.FC<ListItemProps> = props => {
+    return (
+        <ul>
+            {props.items.map(list => (
+                <li key={list.id}>{list.title}</li>
+            ))}
+        </ul>
+    )
+}
+
+export default InputList;

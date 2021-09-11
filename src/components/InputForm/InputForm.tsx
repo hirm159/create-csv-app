@@ -1,4 +1,4 @@
-import React  from 'react';
+import React, { useState }  from 'react';
 import { InputGroup, FormControl, Button } from 'react-bootstrap';
 
 export default class InputForm extends React.Component {

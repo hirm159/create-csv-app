@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Container, Card, Col, Row } from 'react-bootstrap';
+import { Container, Card, Col, Row } from 'react-bootstrap';
 
 const titleStyle: React.CSSProperties = {
     marginBottom: "30px"
