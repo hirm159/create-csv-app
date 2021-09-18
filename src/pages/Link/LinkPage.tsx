@@ -26,6 +26,17 @@ export default class LinkPage extends React.Component {
                                 </Card.Body>
                             </Card>
                         </Col>
+                        <Col xs={6}>
+                            <Card>
+                                <Card.Body>
+                                    <Card.Title>React 公式</Card.Title>
+                                    <Card.Text>
+                                        React公式（日本語版）
+                                    </Card.Text>
+                                    <Card.Link target="_blank" href="https://ja.reactjs.org/">Link</Card.Link>
+                                </Card.Body>
+                            </Card>
+                        </Col>
                     </Row>
                 </div>
             </Container>

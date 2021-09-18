@@ -7,8 +7,6 @@ const titleStyle: React.CSSProperties = {
     marginBottom: "30px"
 }
 
-const items = [{id:0, title:""}];
-
 export default class TopPage extends React.Component {
     render() {
         return (
@@ -20,9 +18,6 @@ export default class TopPage extends React.Component {
                     <div className="row justify-content-center">
                         <Col md={8}>
                             <InputForm />
-                        </Col>
-                        <Col md={8}>
-                            <InputList items={items} />
                         </Col>
                     </div>
                 </div>
