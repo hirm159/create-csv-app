@@ -15,7 +15,7 @@ export default class LinkPage extends React.Component {
                     </Col>
                     <Row>
                         <Col xs={6}>
-                            <Card>
+                            <Card className="h-100">
                                 <Card.Body>
                                     <Card.Title>TuneMyMusic</Card.Title>
                                     <Card.Text>
@@ -27,13 +27,26 @@ export default class LinkPage extends React.Component {
                             </Card>
                         </Col>
                         <Col xs={6}>
-                            <Card>
+                            <Card className="h-100">
                                 <Card.Body>
                                     <Card.Title>React 公式</Card.Title>
                                     <Card.Text>
                                         React公式（日本語版）
                                     </Card.Text>
                                     <Card.Link target="_blank" href="https://ja.reactjs.org/">Link</Card.Link>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col xs={6}>
+                            <Card className="h-100">
+                                <Card.Body>
+                                    <Card.Title>MITライセンス</Card.Title>
+                                    <Card.Text>
+                                        MITライセンスページ
+                                    </Card.Text>
+                                    <Card.Link target="_blank" href="https://opensource.org/licenses/mit-license.php">Link</Card.Link>
                                 </Card.Body>
                             </Card>
                         </Col>
