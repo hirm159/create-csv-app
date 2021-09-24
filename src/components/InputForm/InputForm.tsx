@@ -14,12 +14,11 @@ export default class InputForm extends React.Component {
     onSubmit = () => {
         if (this.state.value.length === 0) {
             return "";
-        }
+        } 
         const input = {
             id: items.length,
             value: this.state.value
         }
-        console.log(input);
         items.push(input);
         this.setState({ value: ""});
     }
@@ -30,6 +29,7 @@ export default class InputForm extends React.Component {
 
     clearAll = () => {
         items.length = 0;
+        this.setState({ value: ""});
     }
 
     render() {
