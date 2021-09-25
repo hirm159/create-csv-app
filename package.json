@@ -59,5 +59,5 @@
     "@types/react-router-dom": "^5.1.8",
     "gh-pages": "^3.2.3"
   },
-  "homepage": "https://(user name).github.io/(repository name)/"
+  "homepage": "https://hirm159.github.io/create-csv-app/"
 }
