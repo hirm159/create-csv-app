@@ -8,7 +8,7 @@ import { Navbar, Container, Nav } from 'react-bootstrap';
 class App extends Component {
   render () {
     return (
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <div>
           <Navbar bg="light" expand="lg">
             <Container>
