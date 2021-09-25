@@ -20,7 +20,6 @@ const InputList: React.FC<ListItemProps> = props => {
                 bootstrap4={true}
                 bordered={true}
             />
-            
         </div>
     )
 }

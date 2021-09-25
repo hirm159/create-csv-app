@@ -1,6 +1,8 @@
 import React, { useRef, useState }  from 'react';
 import { Row, Col, InputGroup, FormControl, Button } from 'react-bootstrap';
 import InputList from '../../components/InputList/InputList';
+import ToolkitProvider, { CSVExport } from 'react-bootstrap-table2-toolkit';
+import { CSVLink, CSVDownload } from 'react-csv';
 
 const items = [{id:0, value:""}];
 
@@ -8,7 +10,7 @@ export default class InputForm extends React.Component {
 
     state = {
         id: 0,
-        value:""
+        value:"ClearAllボタンを押してから入力して下さい"
     };
 
     onSubmit = () => {
@@ -16,7 +18,7 @@ export default class InputForm extends React.Component {
             return "";
         } 
         const input = {
-            id: items.length,
+            id: items.length + 1,
             value: this.state.value
         }
         items.push(input);
@@ -76,12 +78,12 @@ export default class InputForm extends React.Component {
                         </Button>
                     </Col>
                     <Col md={4}>
-                        <Button
-                            size="lg"
-                            variant="dark"
+                        <CSVLink
+                            data={items}
+                            className={"btn btn-dark btn-lg"}
                         >
                             CreateCsv
-                        </Button>
+                        </CSVLink>
                     </Col>
                 </Row>
                 <Row className="mt-5">
