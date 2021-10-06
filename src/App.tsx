@@ -13,7 +13,7 @@ class App extends Component {
           <Navbar bg="light" expand="lg">
             <Container>
               <Navbar.Brand href="/">Create-Csv-App</Navbar.Brand>
-              <Navbar.Text>version 1.0.0</Navbar.Text>
+              <Navbar.Text>version 1.0.1</Navbar.Text>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
