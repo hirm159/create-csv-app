@@ -1,7 +1,7 @@
 {
   "name": "create-csv-app",
   "version": "0.1.0",
-  "homepage": "https://hirm159.github.io/create-csv-app/",
+  "homepage": "https://hirm159.github.io/create-csv-app",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",

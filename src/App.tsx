@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
 import './App.css';
-import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import TopPage  from "./pages/Top/TopPage";
 import LinkPage from  "./pages/Link/LinkPage";
 import { Navbar, Container, Nav } from 'react-bootstrap';
 
+const ROUTER_BASENAME = 
+  process.env.NODE_ENV === 'development' ? '/' : '/create-csv-app';
+
 class App extends Component {
   render () {
     return (
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <BrowserRouter basename={ROUTER_BASENAME}>
         <div>
           <Navbar bg="light" expand="lg">
             <Container>
@@ -26,6 +29,7 @@ class App extends Component {
           <Switch>
             <Route path="/" exact component={TopPage} />
             <Route path="/link" exact component={LinkPage} />
+            <Redirect to="/" />
           </Switch>
         </div>
       </BrowserRouter>
