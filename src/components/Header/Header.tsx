@@ -8,7 +8,7 @@ export const Header = () => {
         <div>
             <Navbar expand="lg">
               <Navbar.Brand href="/">Create-Csv-App</Navbar.Brand>
-              <Navbar.Text>version 1.0.0</Navbar.Text>
+              <Navbar.Text>version 1.0.2</Navbar.Text>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
