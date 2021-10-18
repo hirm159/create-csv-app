@@ -6,7 +6,7 @@ import LinkPage from  "./pages/Link/LinkPage";
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import { createBrowserHistory } from 'history';
 
-export const appHistory = createBrowserHistory({ basename: "/create-csv-app" });
+export const appHistory = createBrowserHistory({ basename: "https://hirm159.github.io/create-csv-app" });
 
 class App extends Component {
   render () {
